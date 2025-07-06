@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
     <AssemblyName>SewerSocket</AssemblyName>
-    <Product>My first plugin</Product>
+    <Product>Sewer Socket - Tournament</Product>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
@@ -32,20 +32,17 @@
       <HintPath>..\..\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\Sewer Rave_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>H:\Steam\steamapps\common\Sewer Rave\SewerRaveWindows\Sewer Rave_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\Sewer Rave_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>H:\Steam\steamapps\common\Sewer Rave\SewerRaveWindows\Sewer Rave_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
       <HintPath>..\..\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
-    <Reference Include="BepInEx.Harmony">
-      <HintPath>..\..\BepInEx\core\BepInEx.Harmony.dll</HintPath>
-    </Reference>
   </ItemGroup>
   
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;C:\Users\ESA\Desktop\Sewer Rave +\SewerRaveWindows\BepInEx\plugins\$(ProjectName).dll&quot;&#xD;&#xA;" />
+    <Exec Command="copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;H:\Steam\steamapps\common\Sewer Rave\SewerRaveWindows\BepInEx\plugins\$(ProjectName).dll&quot;&#xD;&#xA;" />
   </Target>
 </Project>
