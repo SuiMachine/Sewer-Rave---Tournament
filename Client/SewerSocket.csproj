@@ -43,6 +43,6 @@
   </ItemGroup>
   
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;H:\Steam\steamapps\common\Sewer Rave\SewerRaveWindows\BepInEx\plugins\$(ProjectName).dll&quot;&#xD;&#xA;" />
+    <Exec Command="copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;H:\Steam\steamapps\common\Sewer Rave\SewerRaveWindows\BepInEx\plugins\$(ProjectName).dll&quot;&#xD;&#xA;copy /Y &quot;$(TargetDir)websocket-sharp.dll&quot; &quot;H:\Steam\steamapps\common\Sewer Rave\SewerRaveWindows\BepInEx\plugins\websocket-sharp.dll&quot;&#xD;&#xA;&#xD;&#xA;copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;$(TargetDir)\..\..\..\Release\$(ProjectName).dll&quot;&#xD;&#xA;copy /Y &quot;$(TargetDir)websocket-sharp.dll&quot; &quot;$(TargetDir)\..\..\..\Release\websocket-sharp.dll&quot;" />
   </Target>
 </Project>
